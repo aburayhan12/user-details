@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        /* Apply the font to the body */
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+
+
+    <div class="bg-white shadow-lg rounded-lg gap-4 p-4 w-full max-w-md max-h-full">
+        <h2 class="text-center font-bold">Card Information</h2>
+        <hr class="mt-1 w-48 h-1 mx-auto bg-gray-100 border-1 rounded">
+        <div class="mt-5 p-4 border rounded-lg border-gray-200 relative">
+            <form id="userForm">
+                <div class="grid gap-4 grid-cols-1">
+                    <div>
+                        <label for="cardType" class="mb-2 block text-sm font-medium text-gray-900 dark:text-white">Card Type</label>
+                        <select id="cardType" class="block w-full rounded-lg border-2 border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:outline-none focus:ring-green-800 focus:border-green-800">
+                            <option value="Reading Card">Reading Card</option>
+                            <option value="User Card">User Card</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="cardStatus" class="mb-2 block text-sm font-medium text-gray-900 dark:text-white">Card Status</label>
+                        <select id="cardStatus" class="block w-full rounded-lg border-2 border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:outline-none focus:ring-green-800 focus:border-green-800">
+                            <option value="Active">Active</option>
+                            <option value="Expired">Expired</option>
+                        </select>
+                    </div>
+
+                    <div class="grid gap-4 grid-cols-1">
+                        <div>
+                            <label for="startDate" class="mb-2 block text-sm font-medium text-gray-900">Start Date</label>
+                            <input type="date" id="startDate" class="bg-gray-50 border-2 border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 focus:outline-none focus:ring-green-800 focus:border-green-800" required />
+                        </div>
+                        <div>
+                            <label for="endDate" class="mb-2 block text-sm font-medium text-gray-900">End Date</label>
+                            <input type="date" id="endDate" class="bg-gray-50 border-2 border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 focus:outline-none focus:ring-green-800 focus:border-green-800" required />
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="mt-8 w-full px-5 py-2.5 rounded-lg text-center text-white bg-green-700 hover:bg-green-800 hover:ring duration-300">Save Changes</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

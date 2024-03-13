@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    /* Apply the font to the body */
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+
+  <div class="bg-white shadow-lg rounded-lg p-4 md:w-2/4 grid gap-4 mt-10 mb-10 relative">
+    <h2 class="font-bold">My Profile</h2>
+    <div class="p-4 border rounded-lg border-gray-200">
+
+      <div class="flex justify-between items-center">
+        <div class="flex items-center">
+          <!-- Student Profile Photo || height,width need same size so that it can round fully -->
+          <img class="rounded-full  w-14 sm:w-auto sm:h-14 cursor-pointer" src="/image/rayhan1.jpg" alt="User Photo">
+          <div class="ml-3">
+            <h2 class="font-bold">Abu Rayhan</h2>
+            <p class="text-sm opacity-60 ">#Role</p>
+            <p class="text-sm opacity-60 ">Colony, Sherpur Road, Bogura</p>
+          </div>
+        </div>
+        <div class="absolute ms-2 top-16 right-6 lg:mt-2.5 lg:right-8">
+          <a href="/edit info/basic info/src/index.html" target="_blank">
+            <button
+              class="border-2 rounded-md p-2 w-20 text-sm font-semibold opacity-30 hover:opacity-100 focus:ring-2 duration-300 hover:shadow-md hover:border-green-800 focus:shadow-md focus:outline-none focus:ring-green-800 focus:border-green-800">
+              <i class="fa-solid fa-pencil"></i>&nbsp;&nbsp;Edit
+            </button>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="p-4 border rounded-lg border-gray-200 relative">
+      <div>
+        <h2 class="font-bold">Student Information</h2>
+        <div class="grid gap-4 gap-y-5 lg:grid-cols-2 mt-6 opacity-60 lg:text-sm">
+          <div class="grid grid-cols-1 gap-y-2">
+            <span>Name</span>
+            <span class="font-semibold">Md. Abu Rayhan</span>
+          </div>
+          <div class="grid grid-cols-1 gap-y-2">
+            <span>Department</span>
+            <span class="font-semibold">Computer Technology</span>
+          </div>
+          <div class="grid grid-cols-1 gap-y-2">
+            <span>Semester</span>
+            <span class="font-semibold">7<sup>th</sup></span>
+          </div>
+          <div class="grid grid-cols-1 gap-y-2">
+            <span>Shift</span>
+            <span class="font-semibold">2<sup>nd</sup> </span>
+          </div>
+          <div class="grid grid-cols-1 gap-y-2">
+            <span>Roll</span>
+            <span class="font-semibold">515449</span>
+          </div>
+          <div class="grid grid-cols-1 gap-y-2">
+            <span>Group</span>
+            <span class="font-semibold">N/A</span>
+          </div>
+          <div class="grid grid-cols-1 gap-y-2">
+            <span>Registration</span>
+            <span class="font-semibold">1502096073</span>
+          </div>
+          <div class="grid grid-cols-1 gap-y-2">
+            <span>Session</span>
+            <span class="font-semibold">2020-21</span>
+          </div>
+        </div>
+
+        <div class="absolute ms-2 top-2 right-2 lg:top-4 lg:right-4">
+          <a href="/edit info/student info/src/index.html" target="_blank">
+            <button
+              class="border-2 rounded-md p-2 w-20 text-sm font-semibold opacity-30 hover:opacity-100 focus:ring-2 duration-300 hover:shadow-md hover:border-green-800 focus:shadow-md focus:outline-none focus:ring-green-800 focus:border-green-800">
+              <i class="fa-solid fa-pencil"></i>&nbsp;&nbsp;Edit
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- address -->
+    <div class="p-4 border rounded-lg border-gray-200 relative">
+      <div>
+        <h2 class="font-bold">Contact Information</h2>
+        <div class="grid gap-4 gap-y-5 lg:grid-cols-2 mt-6 opacity-60 lg:text-sm">
+          <div class="grid grid-cols-1 gap-y-2">
+            <span>Email</span>
+            <span class="font-semibold">aburayhan.bpi@gmail.com</span>
+          </div>
+          <div class="grid grid-cols-1 gap-y-2">
+            <span>Mobile Number</span>
+            <span class="font-semibold">+880 1XXX NNNNNN</span>
+          </div>
+          <div class="grid grid-cols-1 gap-y-2">
+            <span>Present Address</span>
+            <span class="font-semibold">Colony, Sherpur Road, Bogura</span>
+          </div>
+          <div class="grid grid-cols-1 gap-y-2">
+            <span>Parent Number</span>
+            <span class="font-semibold">+880 1XXX NNNNNN</span>
+          </div>
+          <div class="grid grid-cols-1 gap-y-2 ">
+            <span>Permanent Address</span>
+            <span class="font-semibold">Gopalpur, Sherpur, Bogura</span>
+          </div>
+        </div>
+
+        <div class="absolute ms-2 top-2 right-2 lg:top-4 lg:right-4">
+          <a href="/edit info/contact info/src/index.html" target="_blank">
+            <button
+              class="border-2 rounded-md p-2 w-20 text-sm font-semibold opacity-30 hover:opacity-100 focus:ring-2 duration-300 hover:shadow-md hover:border-green-800 focus:shadow-md focus:outline-none focus:ring-green-800 focus:border-green-800">
+              <i class="fa-solid fa-pencil"></i>&nbsp;&nbsp;Edit
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-4 border rounded-lg border-gray-200 relative">
+      <div>
+        <h2 class="font-bold">Card Information</h2>
+        <div class="grid gap-4 gap-y-5 lg:grid-cols-2 mt-6 opacity-60 lg:text-sm">
+          <div class="grid grid-cols-1 gap-y-2">
+            <span>Card Type</span>
+            <!-- dafult value is Reading card -->
+            <span class="font-semibold">Reading Card</span>
+          </div>
+          <div class="grid grid-cols-1 gap-y-2">
+            <span>Card Status</span>
+            <!-- dafult value is Active -->
+            <span class="font-semibold text-green-500">Active</span>
+          </div>
+          <div class="grid grid-cols-1 gap-y-2">
+            <span>Active Date</span>
+            <span class="font-semibold">05-03-2024</span>
+          </div>
+          <div class="grid grid-cols-1 gap-y-2">
+            <span>Expire Date</span>
+            <span class="font-semibold">20-03-2024</span>
+          </div>
+        </div>
+
+        <div class="absolute ms-2 top-2 right-2 lg:top-4 lg:right-4">
+          <a href="/edit info/card info/src/index.html" target="_blank">
+            <button
+              class="border-2 rounded-md p-2 w-20 text-sm font-semibold opacity-30 hover:opacity-100 focus:ring-2 duration-300 hover:shadow-md hover:border-green-800 focus:shadow-md focus:outline-none focus:ring-green-800 focus:border-green-800">
+              <i class="fa-solid fa-pencil"></i>&nbsp;&nbsp;Edit
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+</body>
+
+</html>

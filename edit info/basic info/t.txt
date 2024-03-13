@@ -1,0 +1,22 @@
+<div class="p-10 bg-green-500 shadow-lg justify-center mx-auto text-center">
+
+      <div class="flex justify-between border-2 p-6">
+
+        <div class="sm:flex items-center">
+          <img class="rounded-full w-16 mx-auto sm:w-auto sm:h-14" src="/image/rayhan1.jpg" alt="">
+          <div class="text-center sm:text-left sm:ms-3">
+            <h2>Abu Rayhan</h2>
+            <p>Product Designer</p>
+            <p>Los Angeles, California, USA</p>
+          </div>
+        </div>
+
+        <div class="text-center ">
+          <button class="border-2 rounded-sm p-1 w-20 font-semibold opacity-50 mx-auto"><i
+              class=" fa-solid fa-pencil"></i>&nbsp;&nbsp;Edit</button>
+        </div>
+
+      </div>
+
+
+    </div>

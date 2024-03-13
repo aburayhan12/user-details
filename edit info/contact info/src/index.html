@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    /* Apply the font to the body */
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+
+
+  <div class="bg-white shadow-lg rounded-lg gap-4 p-4 w-full max-w-md max-h-full">
+    <h2 class="text-center font-bold">Contact Information</h2>
+    <hr class="mt-1 w-48 h-1 mx-auto bg-gray-100 border-1 rounded">
+    <div class="mt-5 p-4 border rounded-lg border-gray-200 relative">
+      <form id="userForm">
+        <div class="grid gap-4 grid-cols-1">
+
+          <div>
+            <label for="email" class="mb-2 block text-sm  text-gray-900">Email Address</label>
+            <input type="email" id="email"
+              class="bg-gray-50 border-2 border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 focus:outline-none focus:ring-green-800 focus:border-green-800"
+              placeholder="Enter Email Address" required />
+          </div>
+
+          <div>
+            <label for="ownPhone" class="mb-2 block text-sm text-gray-900">Own Phone Number</label>
+            <input type="tel" id="ownPhone"
+              class="bg-gray-50 border-2 border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 focus:outline-none focus:ring-green-800 focus:border-green-800"
+              placeholder="+880 1XXX NNNNNN" pattern="\+8801[0-9]{3}[0-9]{6}"
+              title="Please enter a valid mobile number in the format: +880 1XXX NNNNNN" required />
+          </div>
+
+          <div>
+            <label for="parentPhone" class="mb-2 block text-sm text-gray-900">Parent Phone Number</label>
+            <input type="tel" id="parentPhone"
+              class="bg-gray-50 border-2 border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 focus:outline-none focus:ring-green-800 focus:border-green-800"
+              placeholder="+880 1XXX NNNNNN" pattern="\+8801[0-9]{3}[0-9]{6}"
+              title="Please enter a valid mobile number in the format: +880 1XXX NNNNNN" required />
+          </div>
+
+          <div>
+            <label for="presentAddress" class="mb-2 block text-sm text-gray-900">Present Address</label>
+            <input type="text" id="presentAddress"
+              class="bg-gray-50 border-2 border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 focus:outline-none focus:ring-green-800 focus:border-green-800"
+              placeholder="Enter Your Present Address" required />
+          </div>
+
+          <div>
+            <label for="permanentAddress" class="mb-2 block text-sm text-gray-900">Permanent Address</label>
+            <input type="text" id="permanentAddress"
+              class="bg-gray-50 border-2 border-gray-300 text-gray-900 text-sm rounded-lg   block w-full p-2.5 focus:outline-none focus:ring-green-800 focus:border-green-800"
+              placeholder="Enter Your Permanent Address" required />
+          </div>
+
+        </div>
+
+
+
+        <button type="submit"
+          class="mt-8 w-full px-5 py-2.5 rounded-lg text-center text-white bg-green-700 hover:bg-green-800 hover:ring duration-300">Save
+          Changes
+        </button>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
